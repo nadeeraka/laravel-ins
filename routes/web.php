@@ -25,7 +25,15 @@ Route::view('about', ' about ');
 Route::view('contact', 'contact');
 
 Route::get('shop', function () {
-    return view('api.shop');
+    $items = [
+        'rice with meet',
+        'rice with vagitabals',
+        'rice with fish',
+        'fry rice chines',
+        'egg parata',
+        'kothhu'
+    ];
+    return view('api.shop', ['items' => $items]);
 });
 // also can use /
 // Route::get('shop', function () {

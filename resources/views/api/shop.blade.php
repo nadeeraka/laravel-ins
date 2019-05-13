@@ -3,8 +3,8 @@
 <p>Today manu</p>
 <div class="grid">
     <ul>
-        <li>hotdog</li>
-        <li>pitsa</li>
-        <li>pasta</li>
+        @foreach( $items as $iteam)
+        <li>{{ $iteam }}</li>
+        @endforeach
     </ul>
 </div>
