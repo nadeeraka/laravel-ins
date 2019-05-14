@@ -7,4 +7,5 @@
         <li>{{ $iteam }}</li>
         @endforeach
     </ul>
+    <p> go back <a href="/">Home</a></p>
 </div>
